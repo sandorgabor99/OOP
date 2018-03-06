@@ -10,13 +10,14 @@ public class calc {
 		int number2=0;
 		String op = "";
 		int res=0;
+		String tomb[]= new String[10];
 		
 		
 		Scanner in = new Scanner (System.in);
-		System.out.println("Kérem az első számot: ");
+	/*	System.out.println("Kérem az első számot: ");
 		
 
-		number=in.nextInt();
+	/*	number=in.nextInt();
 	
 		System.out.println("Kérem az operandust: ");
 		
@@ -26,7 +27,14 @@ public class calc {
 		
 		number2=in.nextInt();
 		
-		in.close();
+		in.close();*/
+		System.out.println("Kerem a muveletet: ");
+		tomb= in.nextLine().split(" ");
+		
+		number=Integer.parseInt(tomb[0]);
+		op=tomb[1];
+		number2=Integer.parseInt(tomb[2]);
+		
 		
 		
 		
